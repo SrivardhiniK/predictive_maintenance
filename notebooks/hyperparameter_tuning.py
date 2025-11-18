@@ -30,9 +30,7 @@ X_scaled = np.reshape(X_scaled, (X_scaled.shape[0], X_scaled.shape[1], 1))
 # Split data
 X_train, X_val, y_train, y_val = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-# =====================================================
-# 2️⃣ Define model builder
-# =====================================================
+
 def build_lstm_model(units=64, dropout_rate=0.2, learning_rate=0.001):
     model = Sequential([
         LSTM(units, activation='tanh', input_shape=(X_train.shape[1], 1)),
@@ -42,9 +40,6 @@ def build_lstm_model(units=64, dropout_rate=0.2, learning_rate=0.001):
     model.compile(optimizer=Adam(learning_rate=learning_rate), loss='mse', metrics=['mae'])
     return model
 
-# =====================================================
-# 3️⃣ Define hyperparameter grid
-# =====================================================
 param_grid = {
     "units": [32, 64, 128],
     "dropout_rate": [0.2, 0.3, 0.5],
