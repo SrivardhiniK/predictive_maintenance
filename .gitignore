@@ -1,16 +1,77 @@
-# Virtual environment
+# ===========================================
+# PYTHON & ENVIRONMENTS
+# ===========================================
 venv/
+env/
+convert_env/
+onnx_env/
+*.pyc
 __pycache__/
+*.pyo
+*.pyd
+.Python
 
-# Data files
-data/
-*.zip
-*.csv
-*.xlsx
-
-# Jupyter checkpoints
+# ===========================================
+# JUPYTER & NOTEBOOK CHECKPOINTS
+# ===========================================
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
-# System files
+# ===========================================
+# MODEL FILES
+# Keep these ignored UNLESS you want to upload them manually
+# ===========================================
+*.h5
+*.keras
+*.onnx
+
+# Uncomment the next lines ONLY if you want to version-control the models
+# models/optimized_lstm.keras
+# models/scaler_X.pkl
+# models/scaler_y.pkl
+
+# ===========================================
+# BUILD & CACHE FOLDERS
+# ===========================================
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# ===========================================
+# SYSTEM / OS FILES
+# ===========================================
 .DS_Store
 Thumbs.db
+
+# ===========================================
+# EDITORS / IDE SETTINGS
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===========================================
+# LOGS
+# ===========================================
+*.log
+
+# ===========================================
+# STREAMLIT & TEMP FILES
+# ===========================================
+.streamlit/
+*.tmp
+*.temp
+
+# ===========================================
+# OPTIONAL: HUGGING FACE / DOCKER
+# ===========================================
+Dockerfile
+packages.txt
+
+# ===========================================
+# GIT SUBMODULE / EMBEDDED REPO WARNING FIX
+# ===========================================
+predictive-maintenance-dashboard/
