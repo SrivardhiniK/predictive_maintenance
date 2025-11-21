@@ -75,3 +75,4 @@ packages.txt
 # GIT SUBMODULE / EMBEDDED REPO WARNING FIX
 # ===========================================
 predictive-maintenance-dashboard/
+tf220_env/
