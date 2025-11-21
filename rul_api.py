@@ -7,9 +7,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-MODEL_PATH = "models/optimized_lstm.keras"
-SCALER_X = "models/scaler_X.pkl"
-SCALER_Y = "models/scaler_y.pkl"
+MODEL_PATH = "models/optimized_lstm_tf220.keras"
+SCALER_X  = "models/scaler_X.pkl"
+SCALER_Y  = "models/scaler_y.pkl"
+
 
 
 
