@@ -7,9 +7,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-MODEL_PATH = "notebooks/models/final_clean_rul_model.keras"
-SCALER_X  = "notebooks/models/scaler_X.pkl"
-SCALER_Y  = "notebooks/models/scaler_y.pkl"
+MODEL_PATH = "models/final_clean_rul_model.keras"
+SCALER_X = "models/scaler_X.pkl"
+SCALER_Y = "models/scaler_y.pkl"
+
 
 
 print("Loading model...")
